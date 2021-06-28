@@ -1,0 +1,143 @@
+/* Image from unsplash --> Author: Erik-Jan Leusink    url: https://unsplash.com/photos/HrMD7MngiBE*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  position: static;
+  width: 900px;
+  height: 160px;
+  padding: 30px;
+  margin-top: 50px;
+  background-color: #e9e9e9;
+}
+
+.welcome p {
+  text-align: justify;
+  margin: 10px 20px;
+}
+
+.music-player {
+  width: 500px;
+  height: 300px;
+  margin-top: 150px;
+  background-color: #7c7c7c;
+  border: 3px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-player img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+}
+
+.music-player .progress {
+  position: relative;
+  height: 10px;
+  width: 300px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+}
+
+.music-player .progress-bar {
+  position: absolute;
+  background-color: #f7f7f7;
+  width: 0px;
+  height: 6px;
+  border-radius: 15px;
+  animation: progress 4s infinite linear;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.music-player .time-left {
+  margin-top: 10px;
+}
+
+.music-player .song-author {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.music-player button {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-weight: 700;
+  border: none;
+  margin-top: 20px;
+  width: 60px;
+  height: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body .welcome {
+    width: 300px;
+    height: 260px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  body .welcome p {
+    margin: 5px 10px;
+  }
+  .music-player {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .music-player .progress {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .welcome {
+    width: 500px;
+    height: 200px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  body .welcome p {
+    margin: 5px 10px;
+  }
+  .music-player {
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+  }
+  .music-player .progress {
+    width: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
